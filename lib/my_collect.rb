@@ -6,6 +6,7 @@ def my_collect(collection)
   while i < collection.size
     yield(collection[i])
     i = i + 1
+    new_array.push(collection)
   end
   return new_array
 end
